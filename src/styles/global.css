@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #10141a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a5c5c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a14d2a;
+}
+
+/* Scroll Animation */
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection Color */
+::selection {
+  background: #a14d2a;
+  color: #fffbe6;
+}
+
+/* Global Transitions */
+* {
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Focus Styles */
+:focus {
+  outline: 2px solid #e1b866;
+  outline-offset: 2px;
+}
+
+/* Loading Animation */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading {
+  animation: pulse 1.5s infinite;
+}
+
+.navbar-no-outline :focus,
+.navbar-no-outline :active,
+.navbar-no-outline :focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+} 
